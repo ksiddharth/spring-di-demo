@@ -2,14 +2,14 @@ package guru.springproject.didemo.service;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Service;
 
-@Controller
+@Service
 @Primary
-@Profile("en")
-public class PrimaryGreetingService implements GreetingServiceInterface {
+@Profile("es")
+public class SpanishGreetingServiceImpl implements GreetingServiceInterface{
     @Override
     public String sayGreeting() {
-        return "Greetings from Primary service";
+        return "Sayanora!";
     }
 }
