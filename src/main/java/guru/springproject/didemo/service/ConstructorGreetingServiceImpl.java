@@ -5,6 +5,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class ConstructorGreetingServiceImpl implements GreetingServiceInterface {
     public String sayGreeting() {
-        return "Constructor Greeting Service Hello";
+        return "Greetings from constructor service";
     }
 }

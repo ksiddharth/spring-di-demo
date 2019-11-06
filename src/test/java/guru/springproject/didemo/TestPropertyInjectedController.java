@@ -3,6 +3,7 @@ package guru.springproject.didemo;
 import guru.springproject.didemo.controller.PropertyInjectedController;
 import guru.springproject.didemo.service.GreetingServiceImpl;
 import guru.springproject.didemo.service.GreetingServiceInterface;
+import guru.springproject.didemo.service.PropertyGreetingServiceImpl;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -14,6 +15,7 @@ public class TestPropertyInjectedController {
     @BeforeAll
     public void setUp() throws Exception {
         propertyInjectedController = new PropertyInjectedController();
+        propertyInjectedController.greetingService = new GreetingServiceImpl();
     }
 
     @Test
