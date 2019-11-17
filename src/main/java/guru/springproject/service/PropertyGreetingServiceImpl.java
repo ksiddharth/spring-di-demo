@@ -1,4 +1,4 @@
-package guru.springproject.didemo.service;
+package guru.springproject.service;
 
 import org.springframework.stereotype.Controller;
 

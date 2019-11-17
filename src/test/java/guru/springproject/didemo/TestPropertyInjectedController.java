@@ -1,9 +1,7 @@
 package guru.springproject.didemo;
 
 import guru.springproject.didemo.controller.PropertyInjectedController;
-import guru.springproject.didemo.service.GreetingServiceImpl;
-import guru.springproject.didemo.service.GreetingServiceInterface;
-import guru.springproject.didemo.service.PropertyGreetingServiceImpl;
+import guru.springproject.service.GreetingServiceImpl;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
