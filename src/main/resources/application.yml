@@ -1,0 +1,5 @@
+guru:
+  springproject:
+      url: from yml url
+      user: from yml user
+      password: from yml password

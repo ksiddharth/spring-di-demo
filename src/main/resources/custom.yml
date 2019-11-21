@@ -1,0 +1,30 @@
+#comment test comment
+name: Siddharth
+
+names:
+  - Test
+  - Est
+  - st
+  - t
+
+attributes:
+  attribute1: toop
+  attribute2: doop #test comment
+
+boolean: true
+boolean2: yes
+false: no # FALSE, false
+
+colon: ":"
+
+singlequote: "its so easy '"
+
+multilineentry: |
+  l;akdjsf
+  sdfl;kjlkjf ;lakdfj sdkljf lksdj flksd
+  askjdfhsl;kdjf lsk;djflksd jlsdfkj sad
+
+multilinebutsingleline: >
+  oasjdfsdfl psadjf lsd flksdfj
+  lkafjslksdj lksj fsf
+   aljksf lksdjf lksdj klfsj
