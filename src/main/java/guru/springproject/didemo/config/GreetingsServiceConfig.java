@@ -4,17 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.annotation.PropertySources;
-import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.Environment;
 
 @Configuration
-@PropertySources (
-        {
-                @PropertySource("classpath:fakedatasource.properties"),
-                @PropertySource("classpath:fakejmssource.properties")
-        })
 public class GreetingsServiceConfig {
     @Value("${guru.springproject.user}")
     private String user;
@@ -47,11 +39,5 @@ public class GreetingsServiceConfig {
         fakeJMSModel.setUrl(jmsUrl);
         fakeJMSModel.setUsername(jmsUser);
         return fakeJMSModel;
-    }
-
-    @Bean
-    public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
-        PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer = new PropertySourcesPlaceholderConfigurer();
-        return propertySourcesPlaceholderConfigurer;
     }
 }
