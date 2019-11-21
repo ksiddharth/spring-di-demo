@@ -1,6 +1,7 @@
 package guru.springproject.didemo;
 
 import guru.springproject.didemo.config.FakeDataSourceModel;
+import guru.springproject.didemo.config.FakeJMSModel;
 import guru.springproject.didemo.controller.ConstructorInjectedController;
 import guru.springproject.didemo.controller.MyController;
 import guru.springproject.didemo.controller.PropertyInjectedController;
@@ -23,6 +24,7 @@ public class DiDemoApplication {
         System.out.println(((SetterInjectedController)ctx.getBean("setterInjectedController")).sayHello());
         System.out.println(((ConstructorInjectedController)ctx.getBean("constructorInjectedController")).sayHello());
         System.out.println(((FakeDataSourceModel)ctx.getBean("fakeDataSourceModel")));
+        System.out.println(((FakeJMSModel)ctx.getBean("fakeJMSModel")));
     }
 
 }
